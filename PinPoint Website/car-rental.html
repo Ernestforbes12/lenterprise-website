@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental</title>
+    <link rel="icon" href="logo update.jpg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="page-transition-overlay"></div>
+    <div class="loader-container" id="loader">
+        <div class="spinner">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <header class="car-rental-header">
+        <nav class="car-rental-nav">
+            <ul>
+                <li><a href="lenterprise.html" class="nav-link">Home</a></li>
+                <li><a href="car-rental.html" class="nav-link">Car Rental</a></li>
+                <li><a href="airbnb.html" class="nav-link">Air BNB</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="car-rental-hero" id="hero">
+        <div class="hero-content">
+            <h1><b><marquee>Welcome To PinPoint Car Rental</b></marquee></h1>
+            <h2>Find Your Perfect Rental Car</h2>
+            <p>Explore our wide selection of vehicles for your next adventure.</p>
+            <button class="rent-now-button" id="show-booking-form-button">Rent Now</button>
+        </div>
+    </section>
+
+    <div class="car-listings" id="rental-options">
+        <div class="car-listing">
+            <a href="whitepasso.jpg" class="car-image-link">
+                <img src="whitepasso.jpg" alt="White Toyota Passo">
+                <div class="image-overlay">
+                    <span class="overlay-text">View Full Picture</span>
+                </div>
+            </a>
+            <div class="car-details">
+                <h3>Toyota Passo (White)</h3>
+                <p>Nimble and economical, the Passo is ideal for zipping around town and exploring hidden gems. Excellent fuel economy makes it budget-friendly for longer adventures.</p>
+                <p>Seats: 5</p>
+                <p>Transmission: Automatic</p>
+                <p>Rate: $50/day</p>
+                <button data-car-type="toyota-passo-white">Book Now</button>
+            </div>
+        </div>
+        <div class="car-listing">
+            <a href="bluepasso.jpg" class="car-image-link">
+                <img src="bluepasso.jpg" alt="Blue Toyota Passo">
+                <div class="image-overlay">
+                    <span class="overlay-text">View Full Picture</span>
+                </div>
+            </a>
+            <div class="car-details">
+                <h3>Toyota Passo (Blue)</h3>
+                <p>Nimble and economical, the Passo is ideal for zipping around town and exploring hidden gems. Excellent fuel economy makes it budget-friendly for longer adventures.</p>
+                <p>Seats: 5</p>
+                <p>Transmission: Automatic</p>
+                <p>Rate: $50/day</p>
+                <button data-car-type="toyota-passo-blue">Book Now</button>
+            </div>
+        </div>
+        <div class="car-listing">
+            <a href="lightpurplepasso.jpg" class="car-image-link">
+                <img src="lightpurplepasso.jpg" alt="Light Purple Toyota Passo">
+                <div class="image-overlay">
+                    <span class="overlay-text">View Full Picture</span>
+                </div>
+            </a>
+            <div class="car-details">
+                <h3>Toyota Passo (Light Purple)</h3>
+                <p>Nimble and economical, the Passo is ideal for zipping around town and exploring hidden gems. Excellent fuel economy makes it budget-friendly for longer adventures.</p>
+                <p>Seats: 5</p>
+                <p>Transmission: Automatic</p>
+                <p>Rate: $50/day</p>
+                <button data-car-type="toyota-passo-lightpurple">Book Now</button>
+            </div>
+        </div>
+        <div class="car-listing">
+            <a href="lightpurplemicra.jpg" class="car-image-link">
+                <img src="lightpurplemicra.jpg" alt="Light Purple Nissan Micra">
+                <div class="image-overlay">
+                    <span class="overlay-text">View Full Picture</span>
+                </div>
+            </a>
+            <div class="car-details">
+                <h3>Nissan Micra (Light Purple)</h3>
+                <p>Turn heads with the Micra's sleek design. It's compact size makes parking a breeze, while its modern features ensure a comfortable and enjoyable ride.</p>
+                <p>Seats: 5</p>
+                <p>Transmission: Automatic</p>
+                <p>Rate: $45/day</p>
+                <button data-car-type="nissan-micra-lightpurple">Book Now</button>
+            </div>
+        </div>
+        <div class="car-listing">
+            <a href="silvermicra.jpg" class="car-image-link">
+                <img src="silvermicra.jpg" alt="Silver Nissan Micra">
+                <div class="image-overlay">
+                    <span class="overlay-text">View Full Picture</span>
+                </div>
+            </a>
+            <div class="car-details">
+                <h3>Nissan Micra (Silver)</h3>
+                <p>Turn heads with the Micra's sleek design. It's compact size makes parking a breeze, while its modern features ensure a comfortable and enjoyable ride.</p>
+                <p>Seats: 5</p>
+                <p>Transmission: Automatic</p>
+                <p>Rate: $45/day</p>
+                <button data-car-type="nissan-micra-silver">Book Now</button>
+            </div>
+        </div>
+        <div class="car-listing">
+            <a href="maroonpasso.jpg" class="car-image-link">
+                <img src="maroonpasso.jpg" alt="Maroon Toyota Passo">
+                <div class="image-overlay">
+                    <span class="overlay-text">View Full Picture</span>
+                </div>
+            </a>
+            <div class="car-details">
+                <h3>Toyota Passo (Maroon)</h3>
+                <p>Nimble and economical, the Passo is ideal for zipping around town and exploring hidden gems. Excellent fuel economy makes it budget-friendly for longer adventures.</p>
+                <p>Seats: 5</p>
+                <p>Transmission: Automatic</p>
+                <p>Rate: $50/day</p>
+                <button data-car-type="toyota-passo-maroon">Book Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="booking-form" style="display: none;">
+        <h2>Book Your Rental</h2>
+        <form id="rental-form">
+            <label for="car-type">Car Type:</label>
+            <select id="car-type" name="car-type" required>
+                <option value="">Select Car Type</option>
+                <option value="toyota-passo-white">Toyota Passo (White)</option>
+                <option value="toyota-passo-blue">Toyota Passo (Blue)</option>
+                <option value="toyota-passo-lightpurple">Toyota Passo (Light Purple)</option>
+                <option value="toyota-passo-maroon">Toyota Passo (Maroon)</option>
+                <option value="nissan-micra-lightpurple">Nissan Micra (Light Purple)</option>
+                <option value="nissan-micra-silver">Nissan Micra (Silver)</option>
+            </select>
+
+            <label for="pickup-location">Pickup Location:</label>
+            <select id="pickup-location" name="pickup-location" required>
+                <option value="">Select Pickup Location</option>
+                <option value="airport">Airport</option>
+                <option value="downtown">Downtown</option>
+                <option value="hotel">Hotel</option>
+            </select>
+
+            <label for="return-location">Return Location:</label>
+            <select id="return-location" name="return-location" required>
+                <option value="">Select Return Location</option>
+                <option value="airport">Airport</option>
+                <option value="downtown">Downtown</option>
+                <option value="hotel">Hotel</option>
+            </select>
+
+            <label for="pickup-date">Pickup Date:</label>
+            <input type="text" id="pickup-date" name="pickup-date" class="datepicker" required>
+
+            <label for="pickup-time">Pickup Time:</label>
+            <input type="time" id="pickup-time" name="pickup-time">
+
+            <label for="return-date">Return Date:</label>
+            <input type="text" id="return-date" name="return-date" class="datepicker" required>
+
+            <label for="return-time">Return Time:</label>
+            <input type="time" id="return-time" name="return-time">
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <span class="error-message" id="contact-email-error"></span>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number">
+
+            <label for="notes">Additional Notes (Optional):</label>
+            <textarea id="notes" name="notes" placeholder="Any Special Requests?"></textarea>
+
+            <div class="button-container">
+                <button type="reset">Clear</button>
+                <button id="close-booking-form">Exit</button>
+                <button type="submit">Submit Booking</button>
+            </div>
+        </form>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2025 PinPoint Car Rental. All rights Reserved</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="script.js"></script>
+</body>
+</html>

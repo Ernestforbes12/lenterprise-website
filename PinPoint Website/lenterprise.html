@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenterprise</title>
+    <link rel="icon" href="logo update.jpg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="animate.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+</head>
+<body class="bg-gray-100 font-inter text-gray-800">
+    <div id="map-container">
+        <canvas id="map-canvas"></canvas>
+        <div id="click-text">Click Here😁</div>
+        <div class="intro-animation">
+            <div class="intro-animation_logo">
+            Lenterprise
+            </div>
+            <div class="intro-animation_svg">
+            <svg width="100%" height="100%">
+                <rect width="100%" height="100%" >
+                </rect>
+            </svg>
+            </div>
+            <div class="intro-animation_minimize">
+            <svg width="100%" height="100%">
+                <rect width="100%" height="100%" >
+                </rect>
+            </svg>
+        </div>
+        <div class="text">
+            <p>Discover the Bahamas</p>
+            <p>Your Island Adventure Begins Here!</p>
+            <button>Explore Now</button>
+        </div>
+        </div>
+    </div>
+    <header class="header bg-white shadow-md py-4 fixed w-full top-0 z-10 transition-shadow">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="logo">
+                <img src="Websitelogo.jpg" alt="Lenterprise Logo" class="h-10">
+            </div>
+            <nav class="nav-bar">
+                <ul class="nav-menu flex space-x-6">
+                    <li><a href="lenterprise.html" class="nav-link text-gray-700 hover:text-blue-500 transition duration-300">Home</a></li>
+                    <li><a href="car-rental.html" class="nav-link text-gray-700 hover:text-blue-500 transition duration-300">Car Rental</a></li>
+                    <li><a href="airbnb.html" class="nav-link text-gray-700 hover:text-blue-500 transition duration-300">Air BNB</a></li>
+                    <li><a href="contact.html" class="nav-link text-gray-700 hover:text-blue-500 transition duration-300">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="search-bar flex items-center">
+                <button type="submit" class="mr-2">
+                    <img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/search.svg" alt="Search" class="h-5 w-5 text-gray-600">
+                </button>
+                <input type="text" placeholder="Search..." aria-label="Search" class="px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8 mt-16">
+        <section class="hero bg-gradient-to-br from-blue-100 to-purple-100 rounded-lg shadow-lg py-16 text-center relative overflow-hidden">
+            <div class="hero-overlay absolute inset-0 bg-gradient-to-b from-black/20 to-black/50 rounded-lg"></div>
+            <div class="hero-content relative z-10">
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4">Welcome to Lenterprise</h1>
+                <p class="text-lg sm:text-xl text-gray-200 mb-8">Discover the best car rental and Air BNB services in The Bahamas.</p>
+                <div class="hero-buttons flex justify-center">
+                    <a href="car-rental.html" class="btn view-cars bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-full transition duration-300 mr-4">View Cars
+                    <a href="airbnb.html" class="btn book-now bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-full transition duration-300">Book Now</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="services py-16">
+            <h2 class="text-3xl font-semibold mb-8 text-blue-600 text-center">Our Services</h2>
+            <p class="text-lg text-gray-600 text-center mb-12">Explore the services we offer in both transportation and accommodation.</p>
+            <div class="service-grid grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="service bg-white rounded-lg shadow-md p-6 flex flex-col justify-between">
+                    <img src="whitepasso.jpg" alt="Car Rental Service" class="rounded-md mb-4 w-full">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-2 text-gray-800">PinPoint Car Rental</h3>
+                        <p class="text-gray-600 mb-4">Explore The Bahamas in comfort and style with our reliable car rental options.</p>
+                        <a href="car-rental.html" class="inline-block text-blue-500 hover:text-blue-700 transition duration-300 font-semibold">View Cars</a>
+                    </div>
+                </div>
+                <div class="service bg-white rounded-lg shadow-md p-6 flex flex-col justify-between">
+                    <img src="bedroom.jpg" alt="Airbnb Service" class="rounded-md mb-4 w-full">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-2 text-gray-800">Gloriana Airbnb</h3>
+                        <p class="text-gray-600 mb-4">Experience authentic Bahamian hospitality in our hand-picked vacation homes.</p>
+                        <a href="airbnb.html" class="inline-block text-blue-500 hover:text-blue-700 transition duration-300 font-semibold">View Homes</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="who-we-are py-16">
+            <h2 class="text-3xl font-semibold mb-8 text-purple-600 text-center">Who We Are</h2>
+            <div class="who-we-are-content flex flex-col md:flex-row items-center gap-8">
+                <img src="family.jpg" alt="Who We Are" class="rounded-lg shadow-md w-full md:w-1/2">
+                <p class="text-lg text-gray-600 leading-relaxed">Lenterprise is a small developing company...  We are a family-owned business born out of a passion for sharing the beauty of The Bahamas.
+                                    We're dedicated to providing exceptional car rental and vacation home experiences, ensuring your
+                                    island getaway is unforgettable.  We strive to provide the best service and the best
+                                    experience for our customers.  Our goal is to make your trip to the Bahamas one that you will
+                                    remember for a lifetime.
+                </p>
+            </div>
+        </section>
+
+        <section class="explore-more py-16">
+            <h2 class="text-3xl font-semibold mb-8 text-blue-600 text-center">Explore More</h2>
+            <p class="text-lg text-gray-600 text-center mb-12">Learn more about our services...</p>
+            <div class="explore-grid grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="explore-item bg-blue-50 rounded-lg p-6 shadow-md transition duration-300 hover:shadow-lg">
+                    <h3 class="text-xl font-semibold mb-2 text-blue-700">Transportation Services</h3>
+                    <p class="text-gray-600">Discover our convenient car rental...</p>
+                    <a href="car-rental.html" class="inline-block mt-4 text-blue-500 hover:text-blue-700 transition duration-300 font-semibold">Learn More</a>
+                </div>
+                <div class="explore-item bg-purple-50 rounded-lg p-6 shadow-md transition duration-300 hover:shadow-lg">
+                    <h3 class="text-xl font-semibold mb-2 text-purple-700">Accommodation Services</h3>
+                    <p class="text-gray-600">Explore our cozy Air BNB...</p>
+                    <a href="airbnb.html" class="inline-block mt-4 text-blue-500 hover:text-blue-700 transition duration-300 font-semibold">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <h2 class="text-3xl font-semibold mb-8 text-purple-600 text-center">Our Location</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.192388214498!2d-77.3343859854827!3d25.05849858191449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x892f7c779f524ff1%3A0xed415432329921b!2sWestwind%20III!5e0!3m2!1sen!2sus!4v1712938837884!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                 
+            </div>
+        </section>
+    </main>
+
+    <div class="page-transition-overlay"></div>
+    <div class="loader-container" id="loader">
+        <div class="spinner">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <footer class="footer bg-gray-800 text-white py-6 mt-12" id="main-footer">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 Lenterprise. All rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://unpkg.com/gsap@3.9.1/dist/gsap.min.js"></script>
+    <script src="script2.js"></script>
+</body>
+</html>

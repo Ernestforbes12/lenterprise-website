@@ -1,0 +1,610 @@
+/* Basic CSS Designs (Modified for "Other Pages") */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #f5f5dc;
+    color: #333;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+    
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-menu li {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Added for smooth hover effect */
+}
+
+.nav-link:hover {
+    color: #008080;
+}
+
+
+/* Footer Styles */
+.footer {
+    background-color: #008080;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 30px;
+    font-size: 0.9em;
+}
+
+.footer a {
+    color: white;
+    text-decoration: underline;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    text-decoration: none;
+}
+
+/* Transition Styles  */
+.trans {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f5f5dc;
+    z-index: 9999;
+    opacity: 0;
+    transition: opacity 0.4s ease, background-color 0.4s ease;
+}
+
+.trans-active {
+    opacity: 1;
+}
+
+/* Loader Styles */
+.loader-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#loader {
+    display: flex;
+}
+
+/* Car Rental Header Styles */
+.car-rental-header {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.car-rental-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.car-rental-nav li {
+    margin: 0 15px;
+}
+
+.car-rental-nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+
+/* Car Rental Hero Styles */
+.car-rental-hero {
+    background-image: url(car\ park.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 150px 0;
+}
+
+.car-rental-hero .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.car-rental-hero h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.car-rental-hero p {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.rent-now-button {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.rent-now-button:hover {
+    background-color: #0056b3;
+}
+
+/* Car Listing Styles */
+.car-listings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.car-listing {
+    display: flex;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 45%;
+    box-sizing: border-box;
+}
+
+.car-listing img {
+    width: 250px;
+    height: 200px;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.car-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.car-details h3 {
+    margin-top: 0;
+    text-align: left;
+}
+
+.car-details p {
+    margin-bottom: 10px;
+}
+
+.car-details button {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+    font-size: 0.9em;
+    align-self: flex-start;
+}
+
+.car-details button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .car-listing {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .car-listing img {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+        height: 200px;
+    }
+}
+
+.car-image-link {
+    position: relative;
+    display: block;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.car-image-link:hover .image-overlay {
+    opacity: 1;
+}
+
+.overlay-text {
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+
+/* Updated Booking Form Styles */
+#booking-form {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 600px;
+    max-height: 80vh;
+    margin: 20px auto;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: none;
+    overflow-y: auto;
+}
+
+#booking-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#booking-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+#booking-form input[type="text"],
+#booking-form input[type="email"],
+#booking-form input[type="tel"],
+#booking-form input[type="time"],
+#booking-form select,
+#booking-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+#booking-form textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+/* Base style for all buttons in the booking form */
+#booking-form button {
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Style for the submit button */
+#booking-form button[type="submit"] {
+    background-color: #5cb85c;
+}
+
+#booking-form button[type="submit"]:hover {
+    background-color: #4cae4c;
+}
+
+/* Style for the reset button */
+#booking-form button[type="reset"] {
+    background-color: #f0ad4e;
+    color: #333;
+}
+
+#booking-form button[type="reset"]:hover {
+    background-color: #eea236;
+}
+
+/* Specific style for the "Exit" button */
+#booking-form button#close-booking-form {
+    background-color: #d9534f;
+}
+
+#booking-form button#close-booking-form:hover {
+    background-color: #c9302c;
+}
+
+#booking-form .button-container {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+#booking-form form {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 500px) {
+    #booking-form form {
+        grid-template-columns: auto 1fr;
+        align-items: center;
+    }
+    #booking-form label {
+        text-align: right;
+        padding-right: 10px;
+    }
+    #booking-form .button-container {
+        grid-column: 1 / 3;
+        justify-content: flex-end;
+    }
+    /* Accurate alignment for label and textarea*/
+    #booking-form label[for="phone"],
+    #booking-form label[for="notes"] {
+        grid-column: 1 / 2;
+        text-align: right;
+        padding-right: 10px;
+    }
+
+    #booking-form #phone,
+    #booking-form #notes {
+        grid-column: 2 / 3;
+    }
+}
+
+/* Airbnb Styles  */
+.airbnb-hero {
+    background-image: url('hero image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.623);
+    padding: 100px 0;
+    text-align: center;
+}
+
+.airbnb-hero .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #d9534f;
+    font-size: large;
+}
+
+.airbnb-hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.airbnb-hero p {
+    font-size: 1.2em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0);
+}
+
+.airbnb-amenities {
+    padding: 60px 20px;
+    margin: 20px auto;
+    text-align: center;
+    background-color: #e0ffff;
+}
+
+.amenities-carousel img {
+    width: 100%;
+    height: auto;
+}
+
+.amenities-carousel h3 {
+    margin-top: 10px;
+}
+
+.airbnb-booking {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #FFFACD;
+}
+
+.amenities-carousel .carousel-item {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+}
+
+.booking-form {
+    max-width: 600px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.booking-form label {
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.booking-form input,
+booking-form select {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+.booking-form button {
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.booking-form button:hover {
+    background-color: #0056b3;
+}
+
+.airbnb-map {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.map-container {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+}
+
+/* Contact Page Styles */
+.contact-page {
+    background-color: #222;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.info-item {
+    text-align: center;
+}
+
+.info-item i {
+    font-size: 2em;
+    color: #DAA520;
+    margin-bottom: 10px;
+}
+
+.contact-form h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #444;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    height: 150px;
+}
+
+.contact-form button {
+    background-color: #DAA520;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.contact-form select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23fff'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+
+/* General Page Styles */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+main h2 {
+    font-size: 1.8em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+main ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+main li {
+    margin-bottom: 10px;
+}
+
+main p {
+    line-height: 1.6;
+}
